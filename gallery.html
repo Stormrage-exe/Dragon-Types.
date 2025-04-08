@@ -6,49 +6,84 @@
     <title>Warcraft Dragon Types</title>
 <link rel="stylesheet" href="index.css">
 </head>
+<script>
+    const funFacts = [
+        "Nozdormu the Timeless, Aspect of Time, can see all possible futures but is fated to become Murozond, the leader of the evil Infinite Dragonflight.",
+        "Deathwing’s body was so unstable from Old God corruption that he had to reinforce his scales with elementium plates bolted directly into his flesh.",
+        "Most dragons can shapeshift into humanoid forms—like Alexstrasza often appearing as a high elf—but some, like Deathwing, prefer terrifying half-dragon forms.",
+        "Galakrond didn’t just kill other proto-dragons—he ate them, growing larger and more twisted with each meal. His hunger was so extreme that his body mutated into a grotesque, undead monstrosity.",
+        "Before becoming Aspects, Alexstrasza, Nozdormu, Ysera, Malygos, and Neltharion were just ordinary proto-dragons who united to stop Galakrond.",
+        "Plagued dragons refer to dragons that have been infused with the Plague of Undeath by the Cult of the Damned. The experiment began within Scholomance as another method of spreading the plague. The necromancers of Scholomance, working under Vectus, used black dragon eggs from the Burning Steppes as the basis for their experiments,and hoped to unleash the plagued dragons on the world as a dragonflight.",
+        "The chromatic dragonflight of Blackrock Spire was created by Nefarian's magical experiments, using the blood of dragons from the other dragonflights.",
+        "Wrathion, the Black Prince, is one of the few black dragons on Azeroth known to be uncorrupted by the taint of the Old Gods and, following the death of Deathwing and the destruction of the corrupted black dragonflight, one of the last known black dragons alive on Azeroth.",
+        "Sindragosa, formerly the prime consort of Malygos up until her death during the War of the Ancients, was a mighty frost wyrm raised by the Lich King himself to serve as the queen of the Frostbrood."
+    ];
+
+    function displayRandomFact() {
+        const factContainer = document.getElementById('fun-fact-container');
+        const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+        factContainer.innerHTML = `<p>${randomFact}</p>`;
+    }
+
+    window.addEventListener('DOMContentLoaded', displayRandomFact);
+</script>
+
 <body> 
 <div class="container">
     <header></header>
     <nav>
       <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About</a></li>
+              <li><a href="index.html">Home</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="about.html">About</a></li>
           </ul></nav>
     <div class="flex">
       <aside class="left-sidebar">
-        
           <div class="subtitle">Notable dragon types</div>          <ul class="links">
-              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-               <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+              <li><a href="#">Red Dragonflight</a></li>
+               <li><a href="#">Bronze Dragonflight</a></li>
+               <li><a href="#">Blue Dragonflight</a></li>
+               <li><a href="#">Green Dragonflight</a></li>
+               <li><a href="#">Black Dragonflight</a></li>
           </ul>
           </section>
+          <br>
+          <br>
+          <br>
         <section>
           <div class="right-sidebar">Less known dragon types.</div>
                       <ul class="links">
-              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-               <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+              <li><a href="#">Chromatic Dragonflight</a></li>
+               <li><a href="#">Creatures</a></li>
 
           </ul>
           </section>
       </aside>
       <main>
         <article>
-           
-          <div class="main">The Dragon Types</div>
-          <div></div>
-          </div>
+            <div class="main">
+                <div>
+       <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/wl/WLQK3B2MDL9K1686637002221.jpg" class="galleryimg"></img>
+       <img src="https://warcraft.wiki.gg/images/thumb/f/f8/Battle_of_the_Aspects.jpg/800px-Battle_of_the_Aspects.jpg" class="galleryimg"></img>
+       <img src="https://cdn.shopify.com/s/files/1/0269/0868/8432/files/World-of-Warcraft-Dragon-Lore-Galakrond.jpg?v=1602670274" class="galleryimg"></img>
+       <img src="https://images2.alphacoders.com/511/511772.jpg" class="galleryimg"></img>
+       <img src="https://wallpapercrafter.com/desktop3/1026023-World-of-Warcraft-fan-art-video-games-dragon-architecture.jpg" class="galleryimg"></img>
+                </div>
+            </div>
         </article>
         
       </main>
       <aside class="right-sidebar">
         <section>
           <div class="subtitle">Random facts.</div>
-          <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></section>
+          <div id="fun-fact-container"><p>Loading fun fact...</p></div></section>
         <section>
+            <br>
+            <br>
+            <br>
           <div class="subtitle">More information on Warcraft dragons.</div>          <ul class="links">
-              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-               <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+              <li>Check out the <a href="https://wowpedia.fandom.com/wiki/Dragon">Wowpedia page on Warcraft dragons</a>.</li>
+               <li>Read more about Warcraft dragons on <a href="https://warcraft.wiki.gg/wiki/Dragon">Warcraft Wiki</a></li>
               
           </ul></section>
           </section>

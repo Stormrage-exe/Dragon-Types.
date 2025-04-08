@@ -76,6 +76,22 @@ li{
     text-align:center;
 }
 
+p{
+    text-align:center;
+}
+
+h1{
+    text-align:center;
+}
+
+div{
+    text-align:center;
+}
+
+.galleryimg{
+    width:540px;
+    height:350px;
+}
 header {
     max-height: 200px;
     height: 200px;
