@@ -96,17 +96,30 @@ header::after {
 }
 
 main {
-    width: 100%;
     max-width: 600px;
     margin-left: 20px;
     margin-right: 20px;
 }
+
+button{
+    padding: 10px 50px;
+    width:100px;
+    height:74px;
+    border: 0px;
+    transition: transform .2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+  }
+
 
 section {
     margin-bottom: 10px;
     color: var(--sidebar-text-color);
     animation: slideUp 0.8s ease-out;
 }
+
 
 @keyframes slideUp {
     from { 
