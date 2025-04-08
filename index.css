@@ -1,0 +1,320 @@
+:root {
+    --header-bg: rgba(241, 241, 241, 0.8);
+    --nav-bg: rgba(242, 242, 242, 0.8);
+    --article-bg: rgba(237, 237, 239, 0.9);
+    --border-color: rgba(224, 224, 224, 0.7);
+    --sidebar-text-color: #6F7A79;
+    --article-text-color: #625F5F;
+    --article-heading-color: #929292;
+    --nav-link-color: #8B0000; /* Dark red for Warcraft theme */
+    --darker-border-color: #C6C6C6;
+    --dragon-red: #A52A2A; /* Earthy red */
+    --dragon-gold: #D4AF37; /* Metallic gold */
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Times New Roman', serif;
+    background: 
+        linear-gradient(rgba(165, 42, 42, 0.2), rgba(165, 42, 42, 0.1)),
+        url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt5e0e9f5d7a9c2a6a/5ebd3f1d4b09db1018b17d1a/wow-dragon-aspects.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
+}
+
+header, nav {
+    width: 100%;
+}
+
+aside {
+    width: 250px;
+    margin-top: 30px;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+nav {
+    height: auto;
+    margin-bottom: 10px;
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(5px);
+}
+
+header {
+    max-height: 200px;
+    height: 200px;
+    background-color: var(--header-bg);
+    background-image: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt5e0e9f5d7a9c2a6a/5ebd3f1d4b09db1018b17d1a/wow-dragon-aspects.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+}
+
+header::after {
+    content: "Dragonflight Archives";
+    font-size: 3rem;
+    color: var(--dragon-gold);
+    text-shadow: 2px 2px 4px #000;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section {
+    margin-bottom: 10px;
+    color: var(--sidebar-text-color);
+    animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+article { 
+    border: 1px solid var(--darker-border-color);
+    margin-bottom: 15px;
+    background-color: var(--article-bg);
+    color: var(--article-text-color);
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    border: 1px solid var(--darker-border-color);
+    background-color: var(--nav-bg);
+    padding: 8px 12px;
+    border-radius: 3px;
+    color: var(--dragon-red);
+    font-weight: bold;
+}
+
+.links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links li {
+    background-color: var(--nav-bg);
+    border: 1px solid var(--border-color);
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.links li:hover {
+    background-color: var(--dragon-red);
+    transform: translateX(5px);
+}
+
+.links li:hover a {
+    color: white;
+}
+
+.links li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav {
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.nav li:hover {
+    background-color: var(--dragon-red);
+    transform: scale(1.1);
+}
+
+.nav li:hover a {
+    color: white;
+}
+
+.nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--nav-link-color);
+    white-space: nowrap;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.left-sidebar {
+    margin-left: 50px;
+}
+
+article .subtitle {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--dragon-red);
+    margin: 15px 5px;
+    letter-spacing: 1px;
+}
+
+nav {
+    border: 2px solid var(--darker-border-color);
+    border-left: none;
+    border-right: none;
+}
+
+footer {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    color: var(--sidebar-text-color);
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid var(--darker-border-color);
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer a {
+    color: var(--dragon-red);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--dragon-gold);
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1000px) {
+    .flex {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    
+    aside {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 20px;
+    }
+    
+    aside.left-sidebar {
+        margin-left: 0;
+    }
+    
+    main {
+        margin: 0;
+        order: 1;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    aside {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    aside section {
+        flex: 1 1 300px;
+        margin: 10px;
+        min-width: 250px;
+    }
+    
+    .nav {
+        padding: 10px;
+    }
+    
+    .nav li {
+        padding: 8px 12px;
+    }
+    
+    header::after {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav li {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    aside section {
+        flex: 1 1 100%;
+    }
+    
+    article .subtitle {
+        font-size: 16px;
+    }
+    
+    body {
+        font-size: 13px;
+    }
+    
+    header::after {
+        font-size: 1.5rem;
+    }
+}
