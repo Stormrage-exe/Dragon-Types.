@@ -299,6 +299,7 @@ button:hover {
 
 
 section {
+    width:200px;
     margin-bottom: 10px;
     color: var(--text);
     animation: slideUp 0.8s ease-out;
@@ -445,7 +446,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsive styles */
 @media only screen and (max-width: 1000px) {
     .flex {
         flex-wrap: wrap;
