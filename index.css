@@ -10,6 +10,7 @@
     --darker-border-color: #C6C6C6;
     --text: black; 
     --dragon-gold: #D4AF37; 
+    --dragon-red: #b1120f;
 }
 
 html, body {
@@ -34,6 +35,7 @@ body {
     font-size: 14px;
     display: flex;
     justify-content: center;
+    
 }
 
 .container {
@@ -78,12 +80,22 @@ li{
 
 p{
     text-align:center;
+    color:black;
 }
 
 h1{
     text-align:center;
+    color:black;
 }
 
+h2{
+    color:black;
+    text-align:center;
+}
+h4{
+    color:black;
+    text-align:center;
+}
 div{
     text-align:center;
 }
@@ -113,9 +125,15 @@ header::after {
 }
 .lefttext{
 text-align:left;
+text-align:center;
 }
 .righttext{
     text-align:right;
+    text-align:center;
+}
+
+#p{
+    text-align:center;
 }
 .a{
     border:4px;
@@ -189,13 +207,14 @@ text-align:left;
     animation: fadeInUp 1s ease-out forwards;
 }
 
-.a, .b, .c, .d, .e, .f {
+.a, .b, .c, .d, .e, .f, .g, .h{
     animation: fadeInUp 1s ease-out forwards;
 }
 main {
-    max-width: 670px;
+    width: 1000px;
     margin-left: 20px;
     margin-right: 20px;
+
 }
 
 button{
@@ -213,7 +232,7 @@ button:hover {
 
 section {
     margin-bottom: 10px;
-    color: var(--sidebar-text-color);
+    color: var(--text);
     animation: slideUp 0.8s ease-out;
 }
 
@@ -233,7 +252,7 @@ article {
     border: 1px solid var(--darker-border-color);
     margin-bottom: 15px;
     background-color: var(--article-bg);
-    color: var(--article-text-color);
+    color: var(--text);
     padding: 15px;
     border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -325,7 +344,7 @@ article:hover {
 article .subtitle {
     text-transform: uppercase;
     font-size: 18px;
-    color: var(--dragon-red);
+    color: var(--text);
     margin: 15px 5px;
     letter-spacing: 1px;
 }
@@ -348,7 +367,7 @@ footer {
 }
 
 footer a {
-    color: var(--dragon-red);
+    color: var(--text);
     text-decoration: none;
     transition: color 0.3s ease;
 }
