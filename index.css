@@ -118,41 +118,57 @@ text-align:left;
     text-align:right;
 }
 .a{
+    border:4px;
+    padding:10px;
     width:400px;
     height:350px;
     float:left;
 }
 .b{
+    border:4px;
+    padding:10px;
     width:400px;
     height:350px;
     float:right;
 }
 .c{
+    border:4px;
+    padding:10px;
     width:400px;
     height:350px;
     float:left;
 }
 .d{
+    border:4px;
+    padding:10px;
     width:400px;
     height:350px;
     float:right;
 }
 .e{
+    border:4px;
+    padding:10px;
     width:400px;
     height:350px;
     float:left;
 }
 .f{
+    border:4px;
+    padding:10px;
     width:400px;
     height:350px;
     float:right;
 }
 .g{
+    border:4px;
+    padding:10px;
     width:400px;
     height:350px;
     float:left;
 }
 .h{
+    border:4px;
+    padding:10px;
     width:400px;
     height:450px;
     float:right;
