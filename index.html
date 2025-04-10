@@ -96,42 +96,40 @@
           <div class="subtitle">More information on Warcraft dragons.</div>          <ul class="links">
               <li>Check out the <a href="https://wowpedia.fandom.com/wiki/Dragon">Wowpedia page on Warcraft dragons</a>.</li>
                <li>Read more about Warcraft dragons on <a href="https://warcraft.wiki.gg/wiki/Dragon">Warcraft Wiki</a></li>
+               <div class="dyslexia-toggle-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="dyslexiaToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Dyslexia Font</span>
+            </div>
+        </div>
+        <script>
+          const toggle = document.getElementById('dyslexiaToggle');
+          toggle.addEventListener('change', function() {
+              document.body.classList.toggle('dyslexia-mode', this.checked);
+              
+              if (this.checked) {
+                  localStorage.setItem('dyslexiaMode', 'enabled');
+              } else {
+                  localStorage.removeItem('dyslexiaMode');
+              }
+          });
+          
+          
+          window.addEventListener('DOMContentLoaded', function() {
+              if (localStorage.getItem('dyslexiaMode') === 'enabled') {
+                  document.getElementById('dyslexiaToggle').checked = true;
+                  document.body.classList.add('dyslexia-mode');
+              }
+          });
+        </script>
           </ul></section>
           </section>
-          <div class="dyslexia-toggle-container">
-            <label class="toggle-switch">
-                <input type="checkbox" id="dyslexiaToggle">
-                <span class="slider"></span>
-            </label>
-            <span class="toggle-label">Dyslexia Font</span>
-        </div>
-    </div>
-    <script>
-      const toggle = document.getElementById('dyslexiaToggle');
-      toggle.addEventListener('change', function() {
-          document.body.classList.toggle('dyslexia-mode', this.checked);
-          
-          // Save preference to localStorage
-          if (this.checked) {
-              localStorage.setItem('dyslexiaMode', 'enabled');
-          } else {
-              localStorage.removeItem('dyslexiaMode');
-          }
-      });
-      
-      // Check for saved preference on page load
-      window.addEventListener('DOMContentLoaded', function() {
-          if (localStorage.getItem('dyslexiaMode') === 'enabled') {
-              document.getElementById('dyslexiaToggle').checked = true;
-              document.body.classList.add('dyslexia-mode');
-          }
-      });
-    </script>
-    
-        
       </aside>
     </div>
-    <footer>All credit for the base template goes to <a href="https://goblin-heart.net/sadgrl/">sadgrl.online</a>.</footer>
+   
   </div>
+
 </body>
 </html>
