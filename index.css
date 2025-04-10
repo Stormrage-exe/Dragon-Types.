@@ -150,6 +150,25 @@ text-align:left;
     height:350px;
     float:right;
 }
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.a, .b, .c, .d, .e, .f {
+    animation: fadeInUp 1s ease-out forwards;
+}
 main {
     max-width: 670px;
     margin-left: 20px;
