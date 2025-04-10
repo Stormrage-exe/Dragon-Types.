@@ -29,7 +29,7 @@
 </script>
 
 <body> 
-
+ 
 
 <div class="container">
     <header></header>
@@ -38,7 +38,6 @@
               <li><a href="index.html">Home</a></li>
                <li><a href="gallery.html">Gallery</a></li>
                <li><a href="about.html">About</a></li>
-               <li><a href="credit.html">Credit</a></li>
           </ul></nav>
     <div class="flex">
       <aside class="left-sidebar">
@@ -64,20 +63,22 @@
       </aside>
       <main>
         <article>
-            <div class="main">
-                <div>
-       <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/wl/WLQK3B2MDL9K1686637002221.jpg" class="galleryimg"></img>
-       <img src="https://warcraft.wiki.gg/images/thumb/f/f8/Battle_of_the_Aspects.jpg/800px-Battle_of_the_Aspects.jpg" class="galleryimg"></img>
-       <img src="https://cdn.shopify.com/s/files/1/0269/0868/8432/files/World-of-Warcraft-Dragon-Lore-Galakrond.jpg?v=1602670274" class="galleryimg"></img>
-       <img src="https://images2.alphacoders.com/511/511772.jpg" class="galleryimg"></img>
-       <img src="https://wallpapercrafter.com/desktop3/1026023-World-of-Warcraft-fan-art-video-games-dragon-architecture.jpg" class="galleryimg"></img>
-                </div>
-            </div>
+          <div class="main">Credits</div>
+          <p>Layout made by sadgrl.online: <a href="https://goblin-heart.net/sadgrl/webmastery/layouts/">link</a></p>
+          <p>All the information on dragons has been gathered from the Dragonflight Codex: <a href="https://wowpedia.fandom.com/wiki/World_of_Warcraft:_The_Dragonflight_Codex">link</a> </p>
+          <p>All the images used have been gathered from <a href="https://wowpedia.fandom.com/wiki/Wowpedia">Wowpedia</a> and <a href="https://www.wowhead.com/wow/retail">Wowhead</a>.</p>
+          <P>Credit for the app used to make the logo goes to <a href="https://www.hiveworkshop.com/threads/axxas-wow-logo-creator.182850/">Axxa's Wow logo Creator</a></P>
+          <p>Thanks a lot to the <a href="https://opendyslexic.org/">people that created the dyslexia font</a> for making this website accesible to everyone!</p>
+          <h2>Many thanks to the people that worked on World of Warcraft and all the passion they put into writing these great stories.</h2>
+          <div>
+      
+          </div>
         </article>
         
       </main>
       <aside class="right-sidebar">
         <section>
+     
           <div class="subtitle">Random facts.</div>
           <div id="fun-fact-container"><p>Loading fun fact...</p></div></section>
         <section>
@@ -87,42 +88,40 @@
           <div class="subtitle">More information on Warcraft dragons.</div>          <ul class="links">
               <li>Check out the <a href="https://wowpedia.fandom.com/wiki/Dragon">Wowpedia page on Warcraft dragons</a>.</li>
                <li>Read more about Warcraft dragons on <a href="https://warcraft.wiki.gg/wiki/Dragon">Warcraft Wiki</a></li>
+               <div class="dyslexia-toggle-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="dyslexiaToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Dyslexia Font</span>
+            </div>
+        </div>
+        <script>
+          const toggle = document.getElementById('dyslexiaToggle');
+          toggle.addEventListener('change', function() {
+              document.body.classList.toggle('dyslexia-mode', this.checked);
               
+              if (this.checked) {
+                  localStorage.setItem('dyslexiaMode', 'enabled');
+              } else {
+                  localStorage.removeItem('dyslexiaMode');
+              }
+          });
+          
+          
+          window.addEventListener('DOMContentLoaded', function() {
+              if (localStorage.getItem('dyslexiaMode') === 'enabled') {
+                  document.getElementById('dyslexiaToggle').checked = true;
+                  document.body.classList.add('dyslexia-mode');
+              }
+          });
+        </script>
           </ul></section>
           </section>
-          <div class="dyslexia-toggle-container">
-            <label class="toggle-switch">
-                <input type="checkbox" id="dyslexiaToggle">
-                <span class="slider"></span>
-            </label>
-            <span class="toggle-label">Dyslexia Font</span>
-        </div>
-    </div>
-    <script>
-      const toggle = document.getElementById('dyslexiaToggle');
-      toggle.addEventListener('change', function() {
-          document.body.classList.toggle('dyslexia-mode', this.checked);
-          
-          // Save preference to localStorage
-          if (this.checked) {
-              localStorage.setItem('dyslexiaMode', 'enabled');
-          } else {
-              localStorage.removeItem('dyslexiaMode');
-          }
-      });
-      
-      // Check for saved preference on page load
-      window.addEventListener('DOMContentLoaded', function() {
-          if (localStorage.getItem('dyslexiaMode') === 'enabled') {
-              document.getElementById('dyslexiaToggle').checked = true;
-              document.body.classList.add('dyslexia-mode');
-          }
-      });
-    </script>
-    
       </aside>
     </div>
    
   </div>
+
 </body>
 </html>
