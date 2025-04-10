@@ -6,10 +6,10 @@
     --sidebar-text-color: #6F7A79;
     --article-text-color: #625F5F;
     --article-heading-color: #929292;
-    --nav-link-color: #8B0000; /* Dark red for Warcraft theme */
+    --nav-link-color: #8B0000; 
     --darker-border-color: #C6C6C6;
-    --dragon-red: #A52A2A; /* Earthy red */
-    --dragon-gold: #D4AF37; /* Metallic gold */
+    --dragon-red: #A52A2A; 
+    --dragon-gold: #D4AF37; 
 }
 
 html, body {
@@ -107,12 +107,9 @@ header {
 }
 
 header::after {
-    content: "Dragonflight Archives";
-    font-size: 3rem;
-    color: var(--dragon-gold);
-    text-shadow: 2px 2px 4px #000;
-    font-weight: bold;
-    letter-spacing: 2px;
+    content:url(https://i.ibb.co/Q7d1bz0F/fhngfhgfhgf-removebg-preview-optimized.png);
+   height:200px;
+   
 }
 .lefttext{
 text-align:left;
@@ -146,6 +143,16 @@ text-align:left;
     float:left;
 }
 .f{
+    width:400px;
+    height:350px;
+    float:right;
+}
+.g{
+    width:400px;
+    height:350px;
+    float:left;
+}
+.h{
     width:400px;
     height:350px;
     float:right;
