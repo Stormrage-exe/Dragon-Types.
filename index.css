@@ -406,7 +406,10 @@ article:hover {
 }
 
 .left-sidebar {
-    margin-left: 50px;
+    margin-left: 20px;
+}
+.right-sidebar{
+    margin-right:20px;
 }
 
 
