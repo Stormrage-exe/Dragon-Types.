@@ -6,6 +6,7 @@
     <title>Warcraft Dragon Types</title>
 <link rel="stylesheet" href="index.css">
 </head>
+
 <script>
     const funFacts = [
         "Nozdormu the Timeless, Aspect of Time, can see all possible futures but is fated to become Murozond, the leader of the evil Infinite Dragonflight.",
@@ -29,6 +30,40 @@
 </script>
 
 <body> 
+
+
+  <div class="toggle-container">
+    <label class="toggle-switch">
+        <input type="checkbox" id="dyslexiaToggle">
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-label">Dyslexia Font</span>
+</div>
+
+<script>
+  const toggle = document.getElementById('dyslexiaToggle');
+  toggle.addEventListener('change', function() {
+      document.body.classList.toggle('dyslexia-mode', this.checked);
+      
+      // Save preference to localStorage
+      if (this.checked) {
+          localStorage.setItem('dyslexiaMode', 'enabled');
+      } else {
+          localStorage.removeItem('dyslexiaMode');
+      }
+  });
+  
+  // Check for saved preference on page load
+  window.addEventListener('DOMContentLoaded', function() {
+      if (localStorage.getItem('dyslexiaMode') === 'enabled') {
+          document.getElementById('dyslexiaToggle').checked = true;
+          document.body.classList.add('dyslexia-mode');
+      }
+  });
+</script>
+
+
+
 <div class="container">
     <header></header>
     <nav>
