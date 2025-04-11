@@ -119,6 +119,7 @@ body {
     background-color: rgba(255, 255, 255, 0.85);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     min-height: 100vh;
+    height:100px;
 }
 
 header, nav {
@@ -128,6 +129,7 @@ header, nav {
 aside {
     width: 200px;
     margin-top: 30px;
+
 }
 
 .flex {
@@ -387,6 +389,7 @@ article:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .nav li {
@@ -419,6 +422,7 @@ article:hover {
 }
 .right-sidebar{
     margin-right:20px;
+ 
 }
 
 
