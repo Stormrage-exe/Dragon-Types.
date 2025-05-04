@@ -6,6 +6,7 @@
     <title>Warcraft Dragon Types</title>
 <link rel="stylesheet" href="index.css">
 </head>
+
 <script>
     const funFacts = [
         "Nozdormu the Timeless, Aspect of Time, can see all possible futures but is fated to become Murozond, the leader of the evil Infinite Dragonflight.",
@@ -29,7 +30,7 @@
 </script>
 
 <body> 
- 
+
 
 <div class="container">
     <header></header>
@@ -56,38 +57,21 @@
         <section>
           <div class="right-sidebar">Less known dragon types.</div>
                       <ul class="links">
-              <li><a href="chromatic.html">Chromatic Dragonflight</a></li>
-               <li><a href="creatures.html">Creatures</a></li>
+                        <li><a href="chromatic.html">Chromatic Dragonflight</a></li>
+                        <li><a href="creatures.html">Creatures</a></li>
 
           </ul>
           </section>
       </aside>
       <main>
         <article>
-          <div class="main"><h3>The Dragon Types</h3></div>
-          <div>
-          <button><a href="reddragon.html"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_red.jpg"></img></a></button>
-          <button><a href="bronzedragon.html"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_bronze.jpg"></img></a></button>
-          <button><a href="bluedragon.html"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_blue.jpg"></img></a></button>
-          <button><a href="greendragon.html"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_green.jpg"></img></a></button>
-          <button><a href="blackdragon.html"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_head_dragon_black.jpg"></img></a></button>
-          <button><a href="dragonkin.html"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_achievement_raiddragon_zskarn.jpg"></img></a></button>
-        <button><a href="creatures.html"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_babyfaeriedragon.jpg"></img></a></button>
-          <button><a href="primal"><img src="https://i.ibb.co/TDs69HSY/Icon-Small-Proto-Air.webp"></img></a></button>
-          <button><a href="infinite"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_infinitedragonmount.jpg"></img></a></button>
-          <button><a href="twilight.html"><img src="https://i.ibb.co/9kHSykGB/Icon-Small-Dragon-Void.webp"></img></a></button>
-          <button><a href="nightmare.html"><img src="https://i.ibb.co/pr6sNd3g/Icon-Small-Drake-Nightmare.webp"></img></a></button>
-          <button><a href="frostbrood.html"><img src="https://wow.zamimg.com/images/wow/icons/large/achievement_boss_sindragosa.jpg"></img></a></button>
-          <button><a href="netherwing.html"><img src="https://i.ibb.co/HTj7bpHk/Icon-Small-Dragon-Nether.webp"></img></a></button>
-          <button><a href="plague.html"><img src="https://i.ibb.co/46M15z1/Icon-Small-Whelp-Plague.webp"></img></a></button>
-          <button><a href="chromatic.html"><img src="https://i.ibb.co/Zz31Sk4V/Icon-Small-Dragon-Violet.webp"></img></a></button>
-          </div>
+          <div class="main">
+           
         </article>
-        
       </main>
+      
       <aside class="right-sidebar">
         <section>
-     
           <div class="subtitle">Random facts.</div>
           <div id="fun-fact-container"><p>Loading fun fact...</p></div></section>
         <section>
@@ -97,40 +81,41 @@
           <div class="subtitle">More information on Warcraft dragons.</div>          <ul class="links">
               <li>Check out the <a href="https://wowpedia.fandom.com/wiki/Dragon">Wowpedia page on Warcraft dragons</a>.</li>
                <li>Read more about Warcraft dragons on <a href="https://warcraft.wiki.gg/wiki/Dragon">Warcraft Wiki</a></li>
-               <div class="dyslexia-toggle-container">
-                <label class="toggle-switch">
-                    <input type="checkbox" id="dyslexiaToggle">
-                    <span class="slider"></span>
-                </label>
-                <span class="toggle-label">Dyslexia Font</span>
-            </div>
-        </div>
-        <script>
-          const toggle = document.getElementById('dyslexiaToggle');
-          toggle.addEventListener('change', function() {
-              document.body.classList.toggle('dyslexia-mode', this.checked);
-              
-              if (this.checked) {
-                  localStorage.setItem('dyslexiaMode', 'enabled');
-              } else {
-                  localStorage.removeItem('dyslexiaMode');
-              }
-          });
-          
-          
-          window.addEventListener('DOMContentLoaded', function() {
-              if (localStorage.getItem('dyslexiaMode') === 'enabled') {
-                  document.getElementById('dyslexiaToggle').checked = true;
-                  document.body.classList.add('dyslexia-mode');
-              }
-          });
-        </script>
           </ul></section>
           </section>
+          <div class="dyslexia-toggle-container">
+            <label class="toggle-switch">
+                <input type="checkbox" id="dyslexiaToggle">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Dyslexia Font</span>
+        </div>
+    </div>
+    <script>
+      const toggle = document.getElementById('dyslexiaToggle');
+      toggle.addEventListener('change', function() {
+          document.body.classList.toggle('dyslexia-mode', this.checked);
+          
+          // Save preference to localStorage
+          if (this.checked) {
+              localStorage.setItem('dyslexiaMode', 'enabled');
+          } else {
+              localStorage.removeItem('dyslexiaMode');
+          }
+      });
+      
+      // Check for saved preference on page load
+      window.addEventListener('DOMContentLoaded', function() {
+          if (localStorage.getItem('dyslexiaMode') === 'enabled') {
+              document.getElementById('dyslexiaToggle').checked = true;
+              document.body.classList.add('dyslexia-mode');
+          }
+      });
+    </script>
+    
       </aside>
     </div>
-   
+    
   </div>
-
 </body>
 </html>
