@@ -130,6 +130,7 @@ header, nav {
 }
 
 main {
+    height:fit-content;
     width: 800px;
     margin: 0 20px;
 }
@@ -190,7 +191,7 @@ header::after {
 
 .a{ 
     width: 380px;
-     height: 350px;
+     height: 400px;
       float: left; 
 }
 .b { 
@@ -200,7 +201,7 @@ header::after {
 }
 .c { 
     width: 400px;
-     height: 350px;
+     height: 410px;
       float: left; 
 }
 .d { 
@@ -219,7 +220,7 @@ header::after {
       float: right; 
 }
 .g { 
-    width: 400px;
+    width: 490px;
      height: 350px;
       float: left; }
 
@@ -230,7 +231,7 @@ header::after {
 }
 .i { 
     width: 400px;
-     height: 450px;
+     height: 350px;
       float: left; 
 }
 
@@ -239,7 +240,7 @@ header::after {
     100% { opacity: 1; transform: translateY(0); }
 }
 
-.fade-in-up, .a, .b, .c, .d, .e, .f, .g, .h {
+.fade-in-up, .a, .b, .c, .d, .e, .f, .g, .h, .i {
     animation: fadeInUp 1s ease-out forwards;
 }
 
