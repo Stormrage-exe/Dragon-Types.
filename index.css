@@ -190,7 +190,7 @@ header::after {
 }
 
 .a{ 
-    width: 480px;
+    width: 440px;
      height: 400px;
       float: left; 
 }
@@ -200,8 +200,8 @@ header::after {
       float: right; 
 }
 .c { 
-    width: 360px;
-     height: 410px;
+    width: 400px;
+     height: 380px;
       float: left; 
 }
 .d { 
