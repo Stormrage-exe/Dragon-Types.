@@ -190,13 +190,13 @@ header::after {
 }
 
 .a{ 
-    width: 380px;
+    width: 480px;
      height: 400px;
       float: left; 
 }
 .b { 
     width: 400px;
-     height: 350px;
+     height: 390px;
       float: right; 
 }
 .c { 
@@ -220,7 +220,7 @@ header::after {
       float: right; 
 }
 .g { 
-    width: 490px;
+    width: 450px;
      height: 350px;
       float: left; }
 
