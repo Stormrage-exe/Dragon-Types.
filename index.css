@@ -222,8 +222,8 @@ header::after {
 .g { 
     width: 450px;
      height: 350px;
-      float: left; }
-
+      float: left; 
+    }
 .h { 
     width: 430px;
      height: 450px;
